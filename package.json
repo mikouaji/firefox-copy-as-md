@@ -1,0 +1,39 @@
+{
+  "name": "copy-as-md",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Firefox extension: click any DOM element and copy it as Markdown.",
+  "license": "MIT",
+  "scripts": {
+    "vendor": "mkdir -p vendor && esbuild node_modules/turndown/dist/turndown.js --minify --legal-comments=eof --outfile=vendor/turndown.js && esbuild node_modules/@joplin/turndown-plugin-gfm/lib/turndown-plugin-gfm.cjs.js --bundle --format=iife --global-name=turndownPluginGfm --minify --legal-comments=eof --outfile=vendor/turndown-plugin-gfm.js",
+    "start": "web-ext run",
+    "lint": "web-ext lint",
+    "build": "npm run vendor && web-ext build --overwrite-dest",
+    "icons": "magick -background none -density 400 icons/icon.svg -resize 48x48 icons/icon-48.png && magick -background none -density 400 icons/icon.svg -resize 96x96 icons/icon-96.png && magick -background none -density 400 icons/icon.svg -resize 128x128 icons/icon-128.png",
+    "build:source": "zip -r web-ext-artifacts/source.zip . -x 'node_modules/*' 'vendor/*' 'web-ext-artifacts/*' '.git/*' 'docs/*' '.idea/*' '.vscode/*' 'source.zip'",
+    "release": "npm run lint && npm run build && npm run build:source"
+  },
+  "devDependencies": {
+    "turndown": "^7.2.0",
+    "@joplin/turndown-plugin-gfm": "^1.0.61",
+    "esbuild": "^0.24.0"
+  },
+  "webExt": {
+    "sourceDir": ".",
+    "ignoreFiles": [
+      "package.json",
+      "package-lock.json",
+      "node_modules",
+      "web-ext-artifacts",
+      ".gitignore",
+      ".git",
+      ".github",
+      ".idea",
+      ".vscode",
+      "docs",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "source.zip"
+    ]
+  }
+}

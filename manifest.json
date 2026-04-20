@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Copy as Markdown",
+  "version": "0.1.0",
+  "description": "Click any element on a page to copy its contents as Markdown.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "copy-as-md@mikouaji.dev",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": ["activeTab", "scripting", "clipboardWrite", "downloads"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_title": "Copy element as Markdown",
+    "default_icon": {
+      "48": "icons/icon.svg",
+      "96": "icons/icon.svg"
+    }
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  }
+}

@@ -1,0 +1,18 @@
+# dependencies & build output
+node_modules/
+vendor/
+web-ext-artifacts/
+source.zip
+
+# logs
+npm-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editors
+.idea/
+.vscode/
+*.swp
