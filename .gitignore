@@ -12,7 +12,8 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# editors
+# editors & local tools
 .idea/
 .vscode/
+.claude/
 *.swp

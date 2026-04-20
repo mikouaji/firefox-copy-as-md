@@ -10,7 +10,7 @@
     "lint": "web-ext lint",
     "build": "npm run vendor && web-ext build --overwrite-dest",
     "icons": "magick -background none -density 400 icons/icon.svg -resize 48x48 icons/icon-48.png && magick -background none -density 400 icons/icon.svg -resize 96x96 icons/icon-96.png && magick -background none -density 400 icons/icon.svg -resize 128x128 icons/icon-128.png",
-    "build:source": "zip -r web-ext-artifacts/source.zip . -x 'node_modules/*' 'vendor/*' 'web-ext-artifacts/*' '.git/*' 'docs/*' '.idea/*' '.vscode/*' 'source.zip'",
+    "build:source": "zip -r web-ext-artifacts/source.zip . -x 'node_modules/*' 'vendor/*' 'web-ext-artifacts/*' '.git/*' 'docs/*' '.idea/*' '.vscode/*' '.claude/*' 'source.zip'",
     "release": "npm run lint && npm run build && npm run build:source"
   },
   "devDependencies": {
@@ -30,6 +30,7 @@
       ".github",
       ".idea",
       ".vscode",
+      ".claude",
       "docs",
       "README.md",
       "THIRD_PARTY_NOTICES.md",
