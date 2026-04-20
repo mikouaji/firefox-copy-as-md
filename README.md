@@ -6,13 +6,13 @@ Click the toolbar icon, hover any element (it gets outlined), click to copy. A t
 
 ## Setup
 
-<video src="docs/setup.mp4" controls width="720"></video>
+https://github.com/user-attachments/assets/7e8c71a7-0114-41e7-9b9e-c7e983251264
 
-Install the extension from the [Firefox Add-ons store](https://addons.mozilla.org/) and pin it to the toolbar.
+**PENDING REVIEW**: Install the extension from the [Firefox Add-ons store](https://addons.mozilla.org/) and pin it to the toolbar.
 
 ## Usage
 
-<video src="docs/usage.mp4" controls width="720"></video>
+https://github.com/user-attachments/assets/78b20ab1-6064-4496-b2e4-f1f490ba7e31
 
 1. Click the toolbar icon to enter pick mode.
 2. Hover — the element under your cursor gets a yellow outline.
