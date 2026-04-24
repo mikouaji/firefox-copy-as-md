@@ -8,7 +8,7 @@ Click the toolbar icon, hover any element (it gets outlined), click to copy. A t
 
 https://github.com/user-attachments/assets/7e8c71a7-0114-41e7-9b9e-c7e983251264
 
-**PENDING REVIEW**: Install the extension from the [Firefox Add-ons store](https://addons.mozilla.org/) and pin it to the toolbar.
+Install the extension from the [Firefox Add-ons store](https://addons.mozilla.org/en-US/firefox/addon/copy-element-as-md/) and pin it to the toolbar.
 
 ## Usage
 
